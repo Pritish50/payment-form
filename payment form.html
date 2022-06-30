@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PAYMENT FORM</title>
+    <STYLE>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding: 8px;
+        } 
+        .container{
+            background-color: azure;
+            padding: 5px 20px 15px 20px;
+            border: 3px solid lightcoral;
+            border-radius: 4px;
+        }
+        .main-heading{
+            text-align: center ;
+            color: whitesmoke;
+            background-color: green;
+            
+        }
+        .sub-heading{
+            text-align: center;
+            color: rgb(73, 146, 91);
+        }
+        input[type= submit ]{
+              background-color: green;
+              color: aliceblue;
+              padding: 12px 20px;
+              border-radius: 4px;
+              width: 100%;
+              cursor: zoom-in;
+        }
+        input[type= "text"],
+        input[type= "email"],
+        input[type= "number"],
+        input[type= "password"],
+        input[type= "date"],
+        input[type="pin"],
+        input[type="upi id"],
+        input[type="adress"],
+         select,
+         text area{
+            width: 100%;
+            height: 32px;
+            margin: 5px;
+            border-radius: 5px;
+         }
+         .line{
+            color: aliceblue;
+         }
+    </STYLE>
+</head>
+<body>
+    <div class="container">
+     <form action="">
+    <h1 class="main-heading"> PAYMENT FORM</h1>
+    <p> Requried files are followed by</p>
+    <h2 class="sub-heading"> Contact Information</h2>
+    <p>
+        Name:* <input type="text" name="name" required>
+    </p>
+    <fieldset>
+        <legend> Gender *</legend>
+        <p> male <input type="radio" name="gender" id="male" required> female <input type="radio" name="gender" id="female" required></p>
+    </fieldset>
+    <p> Adress *</p>
+    <p>
+         <textarea name="adress" id=" adress" cols="50" rows="10"></textarea>
+    </p>
+    <p>
+        Email id * <input type="Email" name="Email" id="Email" required>
+    </p>
+    <p>
+        Pincode * <input type="pin" name="pincode" id="pincode" required>
+    </p> 
+    <h3 class="sub-heading">Payment Informaton </h3>
+    <p>
+        Card Type *
+        <select name="card type" id="card type" required>
+        <option value="">--select a card type--</option>
+        <option value="visa">visa</option>
+        <option value="rupay">rupay</option>
+        <option value="master card">master card</option>
+        </select>
+    </p>
+    <p>
+        card number * <input type="number" name="card number" id="card number" required>
+    </p>
+    <p>
+        expiration date * <input type="date" name="exp date" id="exp date" required>
+    </p>
+    <p>
+    cvv * <input type="password" name="cvv" id="cvv" required>
+    </p>
+    <h3> OR</h3>
+    <p>
+        UPI/BHIM * <select name="card type" id="card type" required>
+            <option value="">--select your upi app--</option>
+            <option value= "phone pay">  phone pay</option>
+            <option value="paytm">paytm</option>
+            <option value="google pay">google pay</option>
+            <option value="others">others</option>
+        </select>
+    </p>
+    <p>
+        Enter your upi id * <input type="upi id" name="upi id" id="upi id" required>
+    </p>
+    <p class="main-heading">
+        <a href="verify and pay now.html" class="line"> verify and pay now</a>
+    </p>
+    </form>
+    </div>
+</body>
+</html>
